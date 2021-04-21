@@ -9,6 +9,7 @@ Example for building the first Report:
 
 # For a quick Push
 
-1. ./pushOntoGH.sh
-
+```
+./pushOntoGH.sh
+```
 
