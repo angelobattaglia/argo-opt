@@ -1,4 +1,6 @@
 # Building the Reports
+The build system is still rudimental, room for improvement
+
 - Example for building the first Report:
 
 ```
