@@ -3,4 +3,8 @@
 *.log
 *.fdb_latexmk
 *.synctex.gz
-
+*.bbl
+*.blg
+*.run.xml
+*.tex.bbl
+*.run.xml
