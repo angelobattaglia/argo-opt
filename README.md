@@ -1,5 +1,5 @@
 # Building the Reports
-Make sure to have /usr/bin/bash installed in this exact path.
+Make sure to have */usr/bin/bash* installed in this exact path.
 A UNIX system is required in order to run this.
 The build system is still rudimental, room for improvement.
 
