@@ -6,7 +6,7 @@ The build system is still rudimental, room for improvement.
 ```
 git clone 
 cd argosoft
-cd Reports
+cd Report_1
 chmod +x compile.sh & ./compile.sh
 ```
 
