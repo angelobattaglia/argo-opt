@@ -14,7 +14,7 @@ chmod +x compile.sh & ./compile.sh
 
 - Open Report_1.pdf with your pdf viewer
 
-# For a quick Push
+# For a quick Push onto GitHub
 
 ```
 ./pushOntoGH.sh
