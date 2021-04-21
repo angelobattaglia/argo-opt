@@ -1,5 +1,5 @@
 # Building the Reports
-Example for building the first Report:
+- Example for building the first Report:
 
 ```
 git clone 
