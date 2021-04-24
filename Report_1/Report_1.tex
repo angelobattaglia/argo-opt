@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, sorting=none]{biblatex}
 \usepackage{graphicx}
 \addbibresource{uni.bib}
 
@@ -14,29 +14,86 @@
 \includegraphics[width=3in]{og_logoargosoft.png}
 \end{center}
 
-\section{Abstract}
+\section{Introduzione}
 
-Un problema di ottimizzazione presenta diverse soluzioni. Ogni soluzione
-ha un punteggio diverso. Il nostro obiettivo è trovare quella che ha il punteggio
-migliore. Il problema in analisi è il Time Table problem finalizzato alla 
-gestione dell'orario scolastico.
+Citando \textcite{StanfordOptimization}, un problema di ottimizzazione riguarda l'allocazione
+delle risorse e l'analisi della complessità di un problema. L'ottimizzazione si suddivide in tre
+sottoinsiemi: Linear Programming, Unconstrained Problems e Constrained Problems. In seguito, 
+utilizzerò questi nomi sia in Italiano che in Inglese. Il successo delle tecniche di ottimizzazione
+della programmazione lineare risiedono soprattutto nella formulazione del problema, piuttosto che
+nel metodo utilizzato per risolverlo. Un problema con un grande numero di vincoli, infatti, 
+presenta usualmente delle caratteristiche di linerità.
 
-\section{Simulated Annealing}
+\subsection{Linear Programming}
+Siano date \textit{i} entità, alle quali associamo \textit{\[w_i\]} pesi. Un problema base che riguarda 
+la programmazione lineare è: \[massimizzare \quad  w_1x_1 + w_2x_2 \]
+\[soggetto \ al \ vincolo \quad x_1 + x_2 \leq B \]
+\[con \quad x_1\geq 0, \ x_2 \geq 0 \]
+
+\subsection{Unconstrained Problems}
+Problemi senza vincoli, ovvero unconstrained problems, sono quelli che considerano tutto il fascio 
+di decisioni possibili. L'assenza di vincoli amplia la portata del problema, lo generalizza, aumentandone
+i gradi di libertà. Inoltre, aggiungere dei vincoli a questa classe di problemi è un'operazione 
+che non presenza, di solito, particolari criticità. A livello teorico, i problemi senza vincoli
+assumono un particolare valore teorico, che successivamente va a concretizzarsi nella quotidianità
+dei problemi con vincoli.
+
+\subsection{Constrained Problems}
+I problemi ai vincoli, detti Constrained Problems, trovano più utilità nelle applicazioni. I vincoli
+vengono imposti nei problemi complessi per semplificarli, e per discretizzarli. Ogni vincolo 
+riduce la portata del problema. Un problema generale che riguarda la programmazione matematica è: 
+\[minimizzare \quad  f(\textbf{x}) \] 
+\[soggetto \ ai \ vincoli \quad h_i(\textbf{x})=0, \ i= 1,2, ..., \ m \] \[g_j(\textbf{x})=0,\ \ j= 1,2, ..., \ p  \] 
+\[con \  x \in \textit{S}\] 
+In questa definizione, \textbf{x} è un vettore \textit{n}-dimensionale nelle incognite \(x_i\),
+della forma \textbf{x} = \( (x_1, x_2, ..., x_n) \), ed \[ \textit{f} \ , \ \textit{\(h_i\)},  \ i= 1,2, ...,\ m,  
+\ \textit{\(g_j\)}, \ j= 1,2, ..., \ p \] sono delle funzioni a valori reali delle variabili 
+\(x_1, \ x_2, \ ..., \ x_n\).
+Una misura ovvia della complessità di un problema è la sua dimensione. 
+La dimensione di un problema è misurata nei termini del numero di incognite e
+di vincoli. Come ci si può aspettare, i problemi trovano una più facile soluzione
+quando la potenza dei calcolatori aumenta e la teoria matematica viene raffinata.
+Un problema di larga scala viene ad avere migliaglia o milioni di variabili e vincoli.
+Un possibile strada da seguire, in termini di software, è \textcite{Gecode}.
+
+\subsection{Algoritmi Iterativi e convergenza}
+
+La caratteristica più importante di un super-computer è la sua abilità di
+computare operazioni ripetitive in maniera efficiente. Per questa ragione,
+molti molti algoritmi di ottimizzazione, per loro natura, sono iterativi.
+Tipicamente si parte da un vettore iniziale \(x_0\) per poi ottenerne uno, tramite un algoritmo, \(x_1\).
+Il processo è ripetuto finché una soluzione migliore \(x_2\) viene trovata. Continuando finché 
+Una sequenza di punti sempre migliori è trovata \( (x_0 , \ x_1 , ..., \ x_k , ...  )\) che si avvicini 
+alla soluzione \textit{x*}. Per i problemi di programazione lineare risolti dal metodo del simplesso,
+la sequenza generata è di lunghezza finita, e raggiunge la soluzione dopo un finito
+numero di passi, anche se non inizialmente specificato.
+Per la programmazione non lineare, la sequenza non raggiunge il punto \textit{x*} soluzione, 
+ma converge verso esso, finché il processo termina ad un punto sufficientemente vicino al 
+punto della soluzione.
+
+\subsection{Convergence-rate theory}
+Abbiamo due aspetti della convergence-rate theory. Il primo è generalmente 
+conosciuto come analisi della complessità, e concerne la velocità dell'algoritmo 
+di convergenza, distinguendo tra tempo polinomiale e tempo non polinomiale.
+Il secondo aspetto provvede l'analisi di quanto il metodo velocemente converge 
+nei suoi passi finali, e può provvedere un paragone dei vari metodi.
+
+\section{Metodo del Simplesso}
+
+\section{Tabu Search}
+
+\subsection{Simulated Annealing}
 
 Come cita l'articolo di  \textcite{SimulatedAnnealing01}, il Simulated Annealing
 è un algoritmo di ottimizzazione che usa diversi strumenti matematici, come  
 
-\section{Tabu Search}
-
 \section{Approccio Greedy}
-
-\section{Metodo del Simplesso}
 
 \section{Algoritmi Genetici}
 
 \section{Bin Packing}
 
-\printbibliography
+\printbibliography[title = {Bibliografia e crediti}]
 
 \end{document}
 

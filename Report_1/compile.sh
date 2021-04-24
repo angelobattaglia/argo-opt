@@ -1,13 +1,10 @@
-#!/usr/bin/bash
-
+#!/bin/bash
 echo "
-##################
-##################
-Compiling LaTeX using pdflatex Report_1.tex
-##################
-##################
+###
+Autocompiling LaTeX script by Angelo Battaglia
+###
 "
-pdflatex Report_1.tex
+
 echo "
 ##################
 ##################
@@ -17,4 +14,13 @@ Using biber for the references
 ````
 "
 biber Report_1
+
+echo "
+##################
+##################
+Compiling LaTeX using pdflatex Report_1.tex
+##################
+##################
+"
+pdflatex Report_1.tex
 
