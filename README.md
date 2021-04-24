@@ -9,7 +9,7 @@ The build system is still rudimental, room for improvement.
 git clone 
 cd argosoft
 cd Report_1
-chmod +x compile.sh & ./compile.sh
+chmod +x compile.sh && ./compile.sh
 ```
 
 - Open Report_1.pdf with your pdf viewer
