@@ -1,7 +1,9 @@
 # Building the Reports
 Make sure to have */bin/bash* installed in this exact path.
 A UNIX-like system is required in order to run this.
-The build system is still rudimental, room for improvement.
+The build system is still rudimental for the latex part, 
+room for improvement. Although I'll try to maintain the testing part
+with a Makefile for convenience.
 
 - Example for building the first Report:
 
