@@ -1,5 +1,5 @@
 # Building the Reports
-Make sure to have */usr/bin/bash* installed in this exact path.
+Make sure to have */bin/bash* installed in this exact path.
 A UNIX-like system is required in order to run this.
 The build system is still rudimental, room for improvement.
 
@@ -14,7 +14,7 @@ chmod +x compile.sh & ./compile.sh
 
 - Open Report_1.pdf with your pdf viewer
 
-# For a quick Push onto GitHub
+### For a quick Push onto GitHub
 
 ```
 ./pushOntoGH.sh
