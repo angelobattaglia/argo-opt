@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo Enter the commit message, and will be pushed onto GitHub
+
 read message
 
 echo The commit message will be: $message
