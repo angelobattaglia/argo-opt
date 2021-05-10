@@ -8,7 +8,7 @@ read origin
 
 $b =
 
-if [ "$origin" = "$b" ]; then
+if [ "$origin" -eq "$b" ]; then
         "$origin" = origin
 fi
 
