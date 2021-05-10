@@ -21,4 +21,4 @@ chmod +x compile.sh && ./compile.sh
 ```
 ./pushOntoGH.sh
 ```
-
+And then write the commit message, it will be pushed automatically
