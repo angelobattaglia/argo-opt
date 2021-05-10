@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo Enter the commit message, and will be pushed onto GitHub
 
