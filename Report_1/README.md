@@ -1,8 +1,14 @@
 # By hand, build of the pdf with pdflatex and Biber
 
+Requisites:
 1. Have installed tex-live-full on a Debian distribution.
 2. Have installed biber.
-3. Use a bash script with the commands.
+
+Use a bash script with the commands:
+```
+chmod +x compile.sh 
+./compile.sh
+```
 
 # So to speak..
 
