@@ -8,9 +8,7 @@ read message
 
 read origin
 
-$b =
-
-if [ "$origin" -eq "$b" ]; then
+if [ "$origin" -eq "" ]; then
         "$origin" = origin
 fi
 
