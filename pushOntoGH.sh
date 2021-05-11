@@ -6,11 +6,13 @@ echo Enter the commit message and the name of the origin, and will be pushed ont
 
 read message
 
+echo Write origin ..
+
 read origin
 
-if [ "$origin" -eq "" ]; then
-        "$origin" = origin
-fi
+#if [ "$origin" -eq "" ]; then
+        #"$origin" = origin
+#fi
 
 echo The commit message will be: "$message"
 
