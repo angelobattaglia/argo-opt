@@ -3,7 +3,15 @@
 
 # I'll call the executable as output
 
-output:
+# Clean pycache
+clean:
+		find . -name '*.pyc' -exec rm --force {} +
+		find . -name '*.pyo' -exec rm --force {} +
+		name '*~' -exec rm --force  {}
 
+Python:
+		python3 SimulatedAnnealing.py
 
+Julia: SimulatedAnnealing.jl
+		julia SimulatedAnnealing.jl
 
