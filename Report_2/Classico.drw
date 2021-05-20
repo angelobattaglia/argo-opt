@@ -916,4 +916,3 @@ attivita=211	durata=1	giorno=1	ora=1	predefinito=0	docsostegno=(-1)	docesclusi=(
 attivita=211	durata=1	giorno=0	ora=3	predefinito=0	docsostegno=(-1)	docesclusi=(0,0,0,0);
 attivita=212	durata=1	giorno=5	ora=1	predefinito=0	docsostegno=(-1)	docesclusi=(0,0,0,0);
 }
-
