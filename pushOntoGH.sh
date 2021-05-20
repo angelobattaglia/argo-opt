@@ -6,7 +6,7 @@ echo Enter the commit message and the name of the origin, and will be pushed ont
 
 read message
 
-echo Write the origin -mandatory- ..
+echo Write the origin, it is mandatory . . .
 
 read origin
 
