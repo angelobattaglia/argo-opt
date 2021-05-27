@@ -1,6 +1,4 @@
-#!/bin/sh
-
 echo Running the Python example
-make Python
+py SimulatedAnnealing.py
 echo Running the Julia example
-make Julia
+julia SimulatedAnnealing.jl
