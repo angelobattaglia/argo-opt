@@ -8,3 +8,5 @@
 *.run.xml
 *.tex.bbl
 *.run.xml
+*.bcf
+*.dvi
