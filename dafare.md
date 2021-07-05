@@ -4,6 +4,8 @@
 
 -> Vedere Simulated Annealing e algoritmi genetici, constained programming (gecode)
 
+-> Sistemare la build con il Makefile, impostare il prototipo con Python
+
 -> Report_2 lo faccio sul timetable problem (30 pagine)
 
 -> Report_3 lo faccio su gecode o algoritmi genetici
