@@ -2,7 +2,7 @@
 
 # make sure that your /bin/sh symlinks to a POSIX compliant shell
 
-echo Enter the commit message and the name of the origin, and will be pushed onto GitHub
+echo Enter the commit message and type origin to be pushed onto GitHub, or gitlab to Gitlab
 
 read message
 

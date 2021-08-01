@@ -16,9 +16,18 @@ chmod +x compile.sh && ./compile.sh
 
 - Open Report_1.pdf with your pdf viewer
 
-### For a quick Push onto GitHub
+### For a quick Push onto GitHub or GitLab
 
+Push onto GitHub:
 ```
-./pushOntoGH.sh
+$ ./push.sh
+origin
+commit message
 ```
-And then write the commit message, it will be pushed automatically
+Push onto Gitlab:
+```
+$ ./push.sh
+gitlab
+commit message
+```
+And then type enter, it will be pushed automatically
