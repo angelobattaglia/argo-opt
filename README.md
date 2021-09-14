@@ -1,9 +1,7 @@
-# Building the Reports
-Make sure to have */bin/bash* installed in this exact path.
-A UNIX-like system is required in order to run this.
-The build system is still rudimental for the latex part, 
-room for improvement. Although I'll try to maintain the testing part
-with a Makefile for convenience.
+## Building the Reports
+The build Make-based. '/bin/bash' is the shell used by 
+the Makefiles in this repository. A UNIX-like system 
+is preferred in order to run this.
 
 - Example for building the first Report:
 
@@ -11,10 +9,18 @@ with a Makefile for convenience.
 git clone 
 cd argosoft
 cd Report_1
-chmod +x compile.sh && ./compile.sh
+make
 ```
 
-- Open Report_1.pdf with your pdf viewer
+- To clean the repository on your local machine after the build:
+```
+make clean
+```
+
+- To clean the repository, *except* the .pdf, on your local machine after the build:
+```
+make clean-pdf
+```
 
 ### For a quick Push onto GitHub or GitLab
 
@@ -24,10 +30,14 @@ $ ./push.sh
 origin
 commit message
 ```
+
 Push onto Gitlab:
 ```
 $ ./push.sh
 gitlab
 commit message
 ```
-And then type enter, it will be pushed automatically
+
+## Copyright
+All the copyright of the third-party articles in this repository goes to the 
+respective holders.

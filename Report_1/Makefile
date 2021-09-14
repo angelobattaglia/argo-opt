@@ -1,58 +1,23 @@
+# If you just type 'make' you'll get the .pdf
 all: Report_1.pdf
 
-Report_1.pdf : Report_1.tex
-	pdflatex Report_1
-	biber Report_1
-	pdflatex Report_1
-	pdflatex Report_1
+MAIN = Report_1
+TEX_RESOURCES = Makefile\
+              $(MAIN).tex\
+              uni.bib
+SHELL = /bin/bash
+FIGURES := $(shell find images/* -type f)
 
+Report_1.pdf: $(TEX_RESOURCES) $(FIGURES)
+	pdflatex $(MAIN)
+	biber $(MAIN)
+	pdflatex $(MAIN)
+	pdflatex $(MAIN)
 
+clean-pdf: 
+	rm -f $(MAIN).{bbl,log,blg,bb,aux,out,toc,idx,bcf,run.xml,ind,ilg,fls,fdb_latexmk}
 
-# PROJECT = 'Report_1' 
-# MAIN = Report_1
-# TEX_SOURCES = Makefile \
-              # $(MAIN).tex \
-              # uni.bib \
+clean: 
+	rm -f $(MAIN).{pdf,bbl,log,blg,bb,aux,out,toc,idx,bcf,run.xml,ind,ilg,fls,fdb_latexmk}
 
-# FIGURES := $(shell find images/* -type f)
-
-# SHELL=/bin/bash
-# DATE = $(shell date +"%d%b%Y")
-# OPT = --interaction=nonstopmode
-
-# all: $(MAIN).pdf
-
-# final: final.pdf
-	# $(MAKE) clean
-
-# final.pdf: cover.pdf $(MAIN).pdf 
-	# pdftk cover.pdf $(MAIN).pdf cat output final.pdf
-
-# $(MAIN).pdf: $(TEX_SOURCES) $(FIGURES)
-	# pdflatex $(MAIN)
-	# makeindex $(MAIN)
-	# bibtex $(MAIN)
-	# pdflatex $(MAIN)
-	# pdflatex $(MAIN)
-	# @#latexmk -pdf -pvc -pdflatex="pdflatex $(OPT)" $(MAIN) 
-
-
-# once: 
-	# pdflatex $(MAIN)
-
-# clean: 
-	# -rm -f $(MAIN).{pdf,log,blg,bb,aux,out,toc,idx,bcf,run.xml,ind,ilg,fls,fdb_latexmk} final.pdf
-
-# targz:
-	# $(MAKE) clean
-	# $(MAKE) all
-	# $(MAKE) clean
-	# tar czf $(PROJECT)_$(DATE).tgz $(TEX_SOURCES) $(FIGURES) cover.pdf
-
-# zip:
-	# $(MAKE) clean
-	# $(MAKE) all
-	# $(MAKE) clean
-	# zip -q $(PROJECT)_$(DATE).zip $(TEX_SOURCES) $(FIGURES) cover.pdf
-	
-# .PHONY: clean all
+.PHONY: clean all

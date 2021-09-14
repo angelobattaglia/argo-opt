@@ -10,3 +10,7 @@
 *.run.xml
 *.bcf
 *.dvi
+.vscode
+/Prototypes/simulazione
+/Prototypes/venv
+__pycache__

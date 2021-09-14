@@ -1,17 +1,26 @@
-# Makefile-based build system of the prototypes
-# Angelo Battaglia, April 2021
+# Angelo Battaglia, 2021
 
-# I'll call the executable as output
+all: Simulation
+
+SHELL := /bin/bash
+MAIN = Simulation.py
+RESOURCES = Makefile\
+		./simulazione\
+            $(MAIN)\
+            Classe.py\
+            School.py\
+            Subject.py\
+            Teacher.py\
+            GeneticAlgorithm.py\
+            SimulatedAnnealing.py
+
+Simulation: $(RESOURCES)
+	python3 $(MAIN)
 
 # Clean pycache
 clean:
-		find . -name '*.pyc' -exec rm --force {} +
-		find . -name '*.pyo' -exec rm --force {} +
-		name '*~' -exec rm --force  {}
+	find . -name '*.pyc' -exec rm --force {} +
+	find . -name '*.pyo' -exec rm --force {} +
+	name '*~' -exec rm --force  {}
 
-Python:
-		python3 SimulatedAnnealing.py
-
-Julia: SimulatedAnnealing.jl
-		julia SimulatedAnnealing.jl
-
+.PHONY: clean all
