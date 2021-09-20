@@ -12,8 +12,8 @@ import Teacher as tc
 
 class Classe:
     # Constructor
-    def __init__(self, fascia, sezione, specialization, ID, sede, minUD, maxUD, orario):
-        self.fascia = fascia
+    def __init__(self, anno, sezione, specialization, ID, sede, minUD, maxUD, orario):
+        self.anno = anno
         self.sezione = sezione
         self.specialization = specialization
         self.ID = ID
@@ -30,4 +30,4 @@ class Classe:
 
     # Getter methods
     def infoClasse(self):
-        return 'Classe: ' +  str(self.fascia) + '\nSezione: ' + self.sezione + '\nSpecializzazione: ' + str(self.specialization) + '\nID: ' + self.ID + '\nSede: ' + self.sede + '\nminUD: ' + str(self.minUD) + '\nmaxUD: ' + str(self.maxUD) + '\nOrario: ' + str(self.orario)
+        return 'Classe: ' +  str(self.anno) + '\nSezione: ' + self.sezione + '\nSpecializzazione: ' + str(self.specialization) + '\nID: ' + self.ID + '\nSede: ' + self.sede + '\nminUD: ' + str(self.minUD) + '\nmaxUD: ' + str(self.maxUD) + '\nOrario: ' + str(self.orario)

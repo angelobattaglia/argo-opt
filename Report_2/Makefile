@@ -11,7 +11,7 @@ SHELL=/bin/bash
 $(MAIN).pdf: $(TEX_SOURCES) $(FIGURES)
 	pdflatex $(MAIN)
 	#makeindex $(MAIN)
-	bibtex $(MAIN)
+	biber $(MAIN)
 	pdflatex $(MAIN)
 	pdflatex $(MAIN)
 
