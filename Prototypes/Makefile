@@ -5,7 +5,6 @@ all: Simulation
 SHELL := /bin/bash
 MAIN = Simulation.py
 RESOURCES = Makefile\
-		./simulazione\
             $(MAIN)\
             Classe.py\
             School.py\
@@ -19,8 +18,8 @@ Simulation: $(RESOURCES)
 
 # Clean pycache
 clean:
-	find . -name '*.pyc' -exec rm --force {} +
-	find . -name '*.pyo' -exec rm --force {} +
+	find . -name '*.pyc' -exec rm --force {} 
+	find . -name '*.pyo' -exec rm --force {} 
 	name '*~' -exec rm --force  {}
 
 .PHONY: clean all
