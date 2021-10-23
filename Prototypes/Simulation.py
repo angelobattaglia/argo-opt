@@ -81,6 +81,3 @@ if __name__ == '__main__':
     
     # GEN_ALGO.compute()
     # GEN_ALGO.plot()
-
-
-
