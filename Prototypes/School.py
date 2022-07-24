@@ -20,7 +20,8 @@ class School:
     """
     Getter Methods
     """
-    def __str__(self):
+    def getName(self):
         return self.name + ' is ' + str(self.code)
 
-    
+    def getCode(self):
+        return self.name + ' is ' + str(self.code)

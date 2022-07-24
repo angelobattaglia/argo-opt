@@ -16,6 +16,9 @@ class Subject:
         self.code = code
     
     # Getter methods
-    def __str__(self):
+    def getName(self):
+        return self.name + ' is ' + str(self.code)
+
+    def getCode(self):
         return self.name + ' is ' + str(self.code)
     
