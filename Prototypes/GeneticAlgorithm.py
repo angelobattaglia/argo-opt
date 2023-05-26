@@ -16,12 +16,6 @@ class GeneticAlgorithm:
     #def __init__(self, Subject):
     #    self.Subject = Subject
 
-    #'''
-    #    Testing a print
-    #'''
-    #def printit(self):
-    #    return self.Subject.__str__()
-    
     def __init__(self, Classes, Teachers):
         self.Classes = Classes
         self.Teachers = Teachers
