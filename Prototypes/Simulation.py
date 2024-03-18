@@ -1,7 +1,6 @@
 """
     Made by Angelo Battaglia (github.com/angelobattaglia)
     2021
-    Licence: GPL
 """
 
 import School as sc
@@ -12,8 +11,8 @@ import GeneticAlgorithm as GA
 
 if __name__ == '__main__':
 
-    a1 = sc.School("Scuola Uno", 42)
-    a2 = sc.School("Scuola Due", 44)
+    a1 = sc.School("Scuola Uno", 911)
+    a2 = sc.School("Scuola Due", 666)
 
     cl1 = cl.Classe(3, 'D', 'Scientifico', '3D', 'Principale', 4, 7,   [[1,1,1,1,1,0,0],
                                                                         [1,1,1,1,1,0,0],
@@ -54,8 +53,8 @@ if __name__ == '__main__':
                                                                          ], 2, 3, 2, 4)
         # Printing the informations of the datas that are input
     print("\nHere's the information about the Schools:")
-    print(a1.__str__())
-    print(a2.__str__())
+    print(a1.getInfo())
+    print(a2.getInfo())
     print("\nHere's the information about the classes:")
     print(cl1.infoClasse())
     print("\nThe following is a numpy matrix of the Orario Scolastico:")
@@ -64,7 +63,6 @@ if __name__ == '__main__':
     print(tc1.infoTeacher())
     print(tc1.infoTeacherUD())
     print(tc1.infoExtraContraints())
-    
     
         # Testing the Genetic Algorithm:
     '''

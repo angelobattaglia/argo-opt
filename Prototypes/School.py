@@ -3,6 +3,7 @@
     2021
     Licence: GPL
 """
+
 import numpy as np
 import scipy as sp
 import Subject as sj
@@ -20,8 +21,11 @@ class School:
     """
     Getter Methods
     """
+    def getInfo(self):
+        return self.name + '\' code is ' + str(self.code)
+
     def getName(self):
-        return self.name + ' is ' + str(self.code)
+        return self.name
 
     def getCode(self):
-        return self.name + ' is ' + str(self.code)
+        return self.code
